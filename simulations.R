@@ -1,5 +1,6 @@
 require(MASS)
 require(ggplot2)
+set.seed(147)
 
 ###########
 # MODEL 1 #
