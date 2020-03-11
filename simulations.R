@@ -39,7 +39,7 @@ sim1 <- function(assort)
     pairings$Ydiff <- pairings$YM - pairings$YF
     pairings$Envdiff <- pairings$EnvM - pairings$EnvF
     
-    model1 < -lm(Ydiff ~ Xdiff, data = pairings)
+    model1 <- lm(Ydiff ~ Xdiff, data = pairings)
     coef1 <- summary(model1)$coeff[2, 1]
     sd1 <- summary(model1)$coeff[2, 2]
     
